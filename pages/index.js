@@ -1,5 +1,7 @@
-function Home() {
-  return <h1>Fernanda, eu te amo. Se você me ama, dá uma risadinha!</h1>;
+import database from "../../../../infra/database.js";
+
+function status(request, response) {
+  response.status(200).json({ chave: "São acima da média" });
 }
 
-export default Home;
+export default status;
